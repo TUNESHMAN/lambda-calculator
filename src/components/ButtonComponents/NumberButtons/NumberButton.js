@@ -1,14 +1,12 @@
 import React from "react";
-
-
-const NumberButton = (props) => {
+const NumberButton = props => {
   return (
     <>
-      
-        <button>{props.number}</button>
-      
+      <button className={props.value === "0" ? "zero-button" : "number-button"}>
+        {props.value}
+      </button>
     </>
   );
 };
 
-export default NumberButton
+export default NumberButton;
